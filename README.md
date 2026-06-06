@@ -1,16 +1,131 @@
-# React + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive weather application built with **React.js** and **Tailwind CSS** that provides real-time weather information for cities around the world.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔍 Search weather by city name
+- 🌡️ Real-time temperature display
+- 💨 Wind speed information
+- 💧 Humidity levels
+- ☁️ Weather conditions and icons
+- 📱 Fully responsive design
+- ⚡ Fast and intuitive user interface
+- 🎨 Modern UI built with Tailwind CSS
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+- **WeatherAPI** 
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+weather-app/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/weather-app.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd weather-app
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```bash
+http://localhost:5173
+```
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root directory and add your API key:
+
+```env
+VITE_WEATHER_API_KEY=your_api_key_here
+```
+
+## 📸 Screenshots
+
+<img width="1362" height="928" alt="image" src="https://github.com/user-attachments/assets/519d15eb-6c7d-42a9-b26d-390e2f4a71c2" />
+
+## 🌐 API Used
+
+This project uses  WeatherAPI to fetch real-time weather data.
+
+## 🎯 Future Improvements
+
+- 📍 Current location weather
+- 🌙 Dark mode support
+- 📅 7-day weather forecast
+- 🌎 Multiple language support
+- ⭐ Favorite cities feature
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+
+**Hetal Jain**
+
+- GitHub: https://github.com/Hetal-Jain-1405
+- LinkedIn: https://www.linkedin.com/in/hetal-jain-17918732a/
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
