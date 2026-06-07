@@ -7,15 +7,11 @@ function App() {
   const [city, setCity] = useState("")
 
   const [data, setData] = useState(false)
-  let [day, setDay] = useState("Day")
 
   const response = () => {
       fetch(`http://api.weatherapi.com/v1/current.json?key=${API_Key}&q=${city}`)
       .then(res => res.json())
       .then((data) => {setData(data); console.log(data)})
-      if (data?.current?.is_day == 0) {
-        setDay("Night")
-      }
 
 }
 
@@ -65,7 +61,7 @@ function App() {
                   <h1 className='text-2xl text-white p-2 m-1'>Pressure</h1>
                 </div>
                 <div>
-                <h1 className='text-2xl text-white p-2 m-1'>{day}</h1>
+                <h1 className='text-2xl text-white p-2 m-1'>{(data.current.is_day && "Day") || "Night"}</h1>
                 <h1 className='text-2xl text-white p-2 m-1'>{data.current.temp_f || "-"}</h1>
                 <h1 className='text-2xl text-white p-2 m-1'>{data.current.humidity || "-"}</h1>
                 <h1 className='text-2xl text-white p-2 m-1'>{data.current.wind_kph  || "-"}</h1>
